@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "758572433914",
+    "project_id": "depflow-ai",
+    "storage_bucket": "depflow-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758572433914:android:e4a14a1e4d3a2ee5e9e443",
+        "android_client_info": {
+          "package_name": "lk.rusiruwije.deplow_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758572433914-f2lvbd0dlhucgt4d9h47k7fohgj0pmt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFdjxI5sY-FoJ9xoTnBZfr83aYsXD4cEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758572433914-f2lvbd0dlhucgt4d9h47k7fohgj0pmt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
