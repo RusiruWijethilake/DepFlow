@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -83,7 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         IconButton(
                           onPressed: () {
                             signInWithGoogle().then((value) {
-                              print(value);
+                              if (kDebugMode) {
+                                print("User signed in successfull ${value.user?.uid}");
+                              }
                             });
                           },
                           icon: Icon(FontAwesome.google),
