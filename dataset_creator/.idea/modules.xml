@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dataset_covert.iml" filepath="$PROJECT_DIR$/.idea/dataset_covert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dataset_creator.iml" filepath="$PROJECT_DIR$/.idea/dataset_creator.iml" />
     </modules>
   </component>
 </project>
