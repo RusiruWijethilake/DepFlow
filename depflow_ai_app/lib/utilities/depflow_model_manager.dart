@@ -6,7 +6,7 @@ class DepFlowModelManager {
 
   final TwitterManager twitterManager;
 
-  final String url = "http://10.0.2.2:8000";
+  final String url = "http://10.0.2.2:5000";
   final headers = {'Content-Type': 'application/json'};
 
   DepFlowModelManager({required this.twitterManager});
@@ -17,6 +17,8 @@ class DepFlowModelManager {
       headers: headers,
       body: jsonEncode(jsonPayload),
     );
+
+    print("Response status: ${response.body}");
 
     final predictions = jsonDecode(response.body);
 

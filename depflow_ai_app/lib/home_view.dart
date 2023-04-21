@@ -91,23 +91,28 @@ class _HomePageState extends State<HomePage> {
         surfaceTintColor: Colors.transparent,
       ),
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: IndexedStack(
-          index: currentPageIndex,
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
-              child: TabHome(twitterManager: widget.twitterManager),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
-              child: TabFind(twitterManager: widget.twitterManager),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-              child: TabProfile(twitterManager: widget.twitterManager),
-            ),
-          ],
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: IndexedStack(
+            index: currentPageIndex,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 8, 24, 8),
+                child: TabHome(twitterManager: widget.twitterManager),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+                child: TabFind(twitterManager: widget.twitterManager),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+                child: TabProfile(twitterManager: widget.twitterManager),
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: NavigationBar(
